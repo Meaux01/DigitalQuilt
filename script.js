@@ -28,11 +28,5 @@ function createSquare(num) {
     console.log("location")
   }
 }
-// }
-createSquare(500)
 
-// div.style.padding = '15px'
-//  const randColorRGB = (num) => {
-//         return (Math.floor(Math.random()*256),Math.floor(Math.random()*num),Math.floor(Math.random()*num))
-//  }
-//  console.log(randColorRGB(256))
+createSquare(500)
