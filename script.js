@@ -1,5 +1,6 @@
 console.log("This works!");
 
+const body = document.querySelector("body")
 const randColorRGB = () => {
     return `rgba(${Math.floor(Math.random() * 255)},${Math.floor(Math.random() * 255)},${Math.floor(Math.random() * 255)},${Math.random()})`
 }
@@ -12,7 +13,6 @@ function createSquare(num = Math.floor(Math.random()*500)) {
     console.log(div)
     div.textContent = i
     div.classList.add("square")
-    const body = document.querySelector("body")
     body.appendChild(div)
     div.style.width = randBoxSize()
     div.style.height = randBoxSize()
@@ -20,9 +20,9 @@ function createSquare(num = Math.floor(Math.random()*500)) {
     body.style.flexWrap = "wrap"
     div.style.display = "flex"
     div.style.alignContent = "flex-start"
-    div.style.border = "1px"
+    div.style.border = "solid 1px"
     div.style.borderColor = 'black'
-    div.style.backgroundColor = 
+    // div.style.backgroundColor = 
     div.style.backgroundColor = randColorRGB()
     // location.reload()
     console.log("location")
