@@ -1,12 +1,12 @@
 console.log("This works!");
 
 const randColorRGB = () => {
-    return `rgba(${Math.floor(Math.random() * 256)},${Math.floor(Math.random() * 256)},${Math.floor(Math.random() * 256)},${Math.random()})`
+    return `rgba(${Math.floor(Math.random() * 255)},${Math.floor(Math.random() * 255)},${Math.floor(Math.random() * 255)},${Math.random()})`
 }
 const randBoxSize = () => {
     return  `${Math.floor(Math.random()*50)}px`
 }
-function createSquare(num) {
+function createSquare(num = Math.floor(Math.random()*500)) {
   for (let i = 1; i <= num; i++) {
     const div = document.createElement("div")
     console.log(div)
